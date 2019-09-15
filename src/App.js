@@ -5,20 +5,51 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='row'>
+        <div className='col'>
+          <div className='config'>
+            <div className="row">
+              <div className="col-lg-4 col-md-6 col-sm-12 center-block">
+                <form className="form-signin">
+                  <div className="form-label-group">
+                    <div className="row">
+                      <div className="col text-center">
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col text-center">
+                        Choose a scenario
+                              <select name="scenario" className="form-control">
+                          <option value="" disabled selected>Choose a scenario...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col text-center">
+                        Choose a character
+                                  <select name="character" className="form-control">
+                          <option value="" disabled selected>Choose a character...</option>
+                          <option value="newchar">Create a new character</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col text-center">
+                        <button className="btn btn-lg btn-primary btn-block" type="submit">Play</button>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col text-center">
+                        <button className="btn btn-lg btn-secondary btn-block" type="submit">Configuration</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
