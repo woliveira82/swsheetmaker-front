@@ -2,7 +2,6 @@
     padding: 2em;
     display: none;
     grid-template-rows:1fr min-content;
-    height: 100vh;
 }
 
 .section{
@@ -10,9 +9,11 @@
 }
 
 .center-block {
-    display: block;
+    display: grid;
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
+    height: 100vh;
 }
 
 .col {
