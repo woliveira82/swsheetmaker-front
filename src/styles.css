@@ -1,0 +1,5 @@
+#App{
+    padding: 2em;
+    display: none;
+    grid-template-rows:1fr min-content;
+}
